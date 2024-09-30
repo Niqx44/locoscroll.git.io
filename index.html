@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div data-scroll-container>
+        <section data-scroll-section>
+            <span class="lerp-wrap" data-scroll>
+                <span data-scroll data-scroll-delay="0.18" data-scroll-speed="33">My</span>
+                <span data-scroll data-scroll-delay="0.14" data-scroll-speed="33">Name</span>
+                <span data-scroll data-scroll-delay="0.12" data-scroll-speed="33">is</span>
+                <span data-scroll data-scroll-delay="0.1" data-scroll-speed="33">Evan</span>
+            </span>
+        </section>
+
+        <section data-scroll-section>
+            <span class="lerp-wrap" data-scroll>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-delay="0.18" data-scroll-speed="33">Beginner</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-delay="0.14" data-scroll-speed="33">Web</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-delay="0.12" data-scroll-speed="33">Developer</span>
+            </span>
+        </section> 
+
+        <section data-scroll-section>
+            <span class="lerp-wrap" data-scroll>
+                <span data-scroll data-scroll-delay="0.18" data-scroll-speed="2">Teknik</span>
+                <span data-scroll data-scroll-delay="0.14" data-scroll-speed="2">Informatika</span>
+                <span data-scroll data-scroll-delay="0.12" data-scroll-speed="2">22</span>
+            </span>
+        </section> 
+
+        <section data-scroll-section>
+            <span class="lerp-wrap" data-scroll>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-delay="0.18" data-scroll-speed="6">Python,</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-delay="0.14" data-scroll-speed="6">Java,</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-delay="0.12" data-scroll-speed="6">C</span>
+            </span>
+        </section> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    <script>
+        const locoScroll = new LocomotiveScroll({
+            el: document.querySelector("[data-scroll-container]"),
+            smooth: true,
+            smartphone: {
+                smooth: true
+            }
+        });
+    </script>
+    
+</body>
+</html>
