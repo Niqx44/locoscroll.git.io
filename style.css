@@ -1,11 +1,43 @@
-body {
+body{
     font-family: monospace;
     font-weight: bold;
+    background-color: #000000;
     margin: 0;
     padding: 0;
 }
 
-section p {
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+#main-header.scrolled {
+    background-color:black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+section p{
     position: absolute;
     top: 20px;
     left: 20px;
@@ -13,7 +45,7 @@ section p {
     padding: 10px;
 }
 
-section {
+section{
     position: relative;
     height: 100vh;
     color: #222;
@@ -21,34 +53,33 @@ section {
     place-content: center;
 }
 
-section:nth-child(1) {
+section:nth-child(1){
     background: #faded7;
 }
 
-section:nth-child(2) {
+section:nth-child(2){
     background: #feffbf;
 }
 
-section:nth-child(3) {
+section:nth-child(3){
     background: #b0efef;
 }
 
-section:nth-child(4) {
+section:nth-child(4){
     background: #ffcbcb;
 }
 
-.lerp-wrap {
+.lerp-wrap{
     display: inline-block;
     vertical-align: middle;
     margin-left: 1.25rem;
     line-height: 1.1;
-    white-space: nowrap; /* Menjaga agar kalimat tetap satu baris */
 }
 
-.lerp-wrap span {
+.lerp-wrap span{
     display: inline-block;
     font-size: clamp(32px, 5vw, 8vw);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; /* Mengoreksi nilai box-shadow */
-    font-size: 80px; /* Ukuran font lebih kecil agar sesuai untuk kalimat */
-    padding: 20px; /* Padding lebih kecil agar kalimat terlihat lebih rapat */
+    box-shadow: rgba(0, 0, 0, 2) 0px 60px 40px -7px;
+    font-size: 70px;
+    padding: 30px;
 }
